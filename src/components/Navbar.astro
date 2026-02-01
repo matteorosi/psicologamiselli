@@ -1,16 +1,18 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 interface NavItem {
   label: string;
   href: string;
 }
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Servizi", href: "/#projects" },
-  { label: "Terapia CBT", href: "/terapia-cognitivo-comportamentale" },
-  { label: "Schema Therapy", href: "/schema-therapy" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contatti", href: "/#contact" },
+  { label: "Home", href: `${base}` },
+  { label: "Servizi", href: `${base}#projects` },
+  { label: "Terapia CBT", href: `${base}terapia-cognitivo-comportamentale` },
+  { label: "Schema Therapy", href: `${base}schema-therapy` },
+  { label: "Blog", href: `${base}blog` },
+  { label: "Contatti", href: `${base}#contact` },
 ];
 ---
 
@@ -31,7 +33,7 @@ const navItems: NavItem[] = [
         ))}
       </ul>
     </div>
-    <a href="/" class="btn btn-ghost text-xl font-semibold text-primary">
+    <a href={base} class="btn btn-ghost text-xl font-semibold text-primary">
       Dott.ssa Miselli
     </a>
   </div>
