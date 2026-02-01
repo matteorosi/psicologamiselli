@@ -7,7 +7,8 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://psicologamiselli.it",
+  site: "https://matteorosi.github.io",
+  base: "/psicologamiselli",
   integrations: [mdx()],
 
   vite: {
