@@ -1,0 +1,26 @@
+enableThemeSelector: true
+extraLinksEnabled: true
+extraLinks:
+  - link: /servizi
+    icon: Heart
+    label: Servizi
+    displayOn: both
+  - link: /terapia-cognitivo-comportamentale
+    icon: Brain
+    label: Terapia CBT
+    displayOn: both
+  - link: /schema-therapy
+    icon: Puzzle
+    label: Schema Therapy
+    displayOn: both
+  - link: /blog
+    icon: BookOpen
+    label: Blog
+    displayOn: both
+showAboutSection: true
+showProjectsSection: true
+showBlogSection: true
+showWorkSection: false
+showEducationSection: true
+showHackathonsSection: false
+showContactSection: true

@@ -1,0 +1,24 @@
+name: Dott.ssa Emanuela Miselli
+title: Psicologa & Psicoterapeuta
+description: >-
+  Psicologa e Psicoterapeuta specializzata in Terapia Cognitivo Comportamentale
+  e Schema Therapy. Mi occupo di disturbi d'ansia, depressione, disturbi di
+  personalità e problematiche di coppia a Reggio Emilia.
+avatar: '@assets/hero/avatar.png'
+location: Reggio Emilia
+socialLinks:
+  - url: mailto:miselli.emanuela.re@gmail.com
+    icon: Email
+    label: Email
+  - url: tel:+393479574727
+    icon: Phone
+    label: Telefono
+  - url: https://www.linkedin.com/in/dott-ssa-emanuela-miselli-b4283842/
+    icon: LinkedIn
+    label: LinkedIn
+  - url: https://www.facebook.com/psicologamiselli/
+    icon: Facebook
+    label: Facebook
+  - url: https://www.miodottore.it/emanuela-miselli-2/psicologo-psicoterapeuta/reggio-emilia
+    icon: ExternalLink
+    label: MioDottore

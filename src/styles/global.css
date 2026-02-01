@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    emerald,
+    corporate,
+    forest;
+}
+
+/* Custom theme override for primary color - teal from original site */
+:root {
+  --primary: #359e81;
+  --primary-content: #ffffff;
+}
+
+[data-theme="light"] {
+  --p: 162 50% 41%; /* #359e81 in HSL */
+  --pc: 0 0% 100%;
+}
+
+[data-theme="emerald"] {
+  --p: 162 50% 41%;
+  --pc: 0 0% 100%;
+}
