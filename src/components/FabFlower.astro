@@ -2,6 +2,9 @@
 import { Link } from "@lucide/astro";
 import { getIcon } from "../utils/iconMapper";
 
+const base = import.meta.env.BASE_URL;
+const normalizedBase = base.endsWith("/") ? base.slice(0, -1) : base;
+
 interface Props {
   extraLinks: Array<{
     link: string;
@@ -33,7 +36,7 @@ const { extraLinks } = Astro.props;
       const IconComponent = getIcon(link.icon as any);
       return (
         <div class="tooltip tooltip-left" data-tip={link.label}>
-          <a href={link.link} class="btn btn-lg btn-circle">
+          <a href={`${normalizedBase}${link.link}`} class="btn btn-lg btn-circle">
             <IconComponent class="size-5" />
           </a>
         </div>

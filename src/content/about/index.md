@@ -1,6 +1,6 @@
 ---
 title: Chi Sono
-photo: '@assets/about/photo.png'
+photo: '@assets/about/photo.jpg'
 link: https://www.miodottore.it/emanuela-miselli-2/psicologo-psicoterapeuta/reggio-emilia
 ---
 Mi chiamo **Emanuela Miselli**, sono psicologa clinica e psicoterapeuta e svolgo la mia attività a **Reggio Emilia** dal 2012.

@@ -1,6 +1,9 @@
 ---
 import { getIcon } from "../utils/iconMapper";
 
+const base = import.meta.env.BASE_URL;
+const normalizedBase = base.endsWith("/") ? base.slice(0, -1) : base;
+
 interface Props {
   extraLinks: Array<{
     link: string;
@@ -18,7 +21,7 @@ const { extraLinks } = Astro.props;
     extraLinks.map((link) => {
       const IconComponent = getIcon(link.icon as any);
       return (
-        <a href={link.link} class="dock-item" aria-label={link.label}>
+        <a href={`${normalizedBase}${link.link}`} class="dock-item" aria-label={link.label}>
           <IconComponent class="size-6" />
           <span class="dock-label">{link.label}</span>
         </a>

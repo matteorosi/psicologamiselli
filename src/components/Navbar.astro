@@ -6,12 +6,15 @@ interface NavItem {
   href: string;
 }
 
+// Ensure base URL ends with a slash
+const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+
 const navItems: NavItem[] = [
-  { label: "Home", href: `${base}` },
-  { label: "Disturbi Trattati", href: `${base}#projects` },
-  { label: "Terapia CBT", href: `${base}terapia-cognitivo-comportamentale` },
-  { label: "Schema Therapy", href: `${base}schema-therapy` },
-  { label: "Contatti", href: `${base}#contact` },
+  { label: "Home", href: normalizedBase },
+  { label: "Disturbi Trattati", href: `${normalizedBase}#projects` },
+  { label: "Terapia CBT", href: `${normalizedBase}terapia-cognitivo-comportamentale` },
+  { label: "Schema Therapy", href: `${normalizedBase}schema-therapy` },
+  { label: "Contatti", href: `${normalizedBase}#contact` },
 ];
 ---
 
