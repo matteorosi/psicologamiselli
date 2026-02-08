@@ -3,7 +3,7 @@ featured: true
 title: Depressione e Disturbi dell'Umore
 description: Quando l'energia emotiva cambia, si abbassa o oscilla fino a diventare difficile da gestire
 image: '@assets/projects/depressione/image.svg'
-startDate: 2024-01-02
+startDate: 2024-01-05
 skills:
   - Depressione maggiore
   - Distimia

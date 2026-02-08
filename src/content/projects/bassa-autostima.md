@@ -3,7 +3,7 @@ featured: true
 title: Bassa Autostima
 description: Quando il valore personale sembra sempre troppo fragile
 image: '@assets/projects/bassa-autostima/image.svg'
-startDate: 2024-01-05
+startDate: 2024-01-02
 skills:
   - Senso di inadeguatezza
   - Paura di sbagliare

@@ -18,11 +18,11 @@ const { title, photo, Content, link } = Astro.props;
     <div class="card card-side bg-base-200 shadow-sm">
       {
         photo && (
-          <figure class="shrink-0 w-48">
+          <figure class="shrink-0 w-48 overflow-hidden">
             {typeof photo === "string" ? (
-              <img src={photo} alt={title} />
+              <img src={photo} alt={title} class="w-full h-full object-cover" />
             ) : (
-              <Image src={photo} alt={title} />
+              <Image src={photo} alt={title} class="w-full h-full object-cover" />
             )}
           </figure>
         )
