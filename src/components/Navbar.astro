@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
 const base = import.meta.env.BASE_URL;
 
 interface NavItem {
@@ -14,8 +16,8 @@ const navItems: NavItem[] = [
   { label: "Disturbi Trattati", href: `${normalizedBase}#projects` },
   { label: "Terapia CBT", href: `${normalizedBase}terapia-cognitivo-comportamentale` },
   { label: "Schema Therapy", href: `${normalizedBase}schema-therapy` },
-  { label: "EMDR", href: `${normalizedBase}emdr` },
   { label: "CFT", href: `${normalizedBase}compassion-focused-therapy` },
+  { label: "EMDR", href: `${normalizedBase}emdr` },
   { label: "DOC", href: `${normalizedBase}disturbo-ossessivo-compulsivo` },
   { label: "Contatti", href: `${normalizedBase}#contact` },
 ];
@@ -38,8 +40,8 @@ const navItems: NavItem[] = [
         ))}
       </ul>
     </div>
-    <a href={base} class="btn btn-ghost text-xl font-semibold text-primary">
-      Dott.ssa Miselli
+    <a href={base} class="btn btn-ghost p-1">
+      <Image src={logo} alt="Dott.ssa Emanuela Miselli - Psicologa e Psicoterapeuta" class="h-8 w-auto" width={160} height={32} />
     </a>
   </div>
   <div class="navbar-center hidden lg:flex">
