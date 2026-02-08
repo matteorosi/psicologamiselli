@@ -12,36 +12,37 @@
 }
 
 /* Custom theme override - colors from psicologamiselli.it */
+/* Primary: #359e81 (teal), Secondary: #2991d6 (blue) */
 [data-theme="retro"] {
-  --p: 162 50% 41%; /* #359e81 teal */
-  --pc: 0 0% 100%;
-  --s: 205 67% 50%; /* #2991d6 blue */
-  --sc: 0 0% 100%;
-  --a: 162 50% 41%;
-  --ac: 0 0% 100%;
+  --color-primary: oklch(63.146% 0.1053 171.009);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(63.164% 0.138 243.353);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(63.146% 0.1053 171.009);
+  --color-accent-content: oklch(100% 0 0);
 }
 
 [data-theme="light"] {
-  --p: 162 50% 41%;
-  --pc: 0 0% 100%;
-  --s: 205 67% 50%;
-  --sc: 0 0% 100%;
-  --a: 162 50% 41%;
-  --ac: 0 0% 100%;
+  --color-primary: oklch(63.146% 0.1053 171.009);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(63.164% 0.138 243.353);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(63.146% 0.1053 171.009);
+  --color-accent-content: oklch(100% 0 0);
 }
 
 [data-theme="dark"] {
-  --p: 162 50% 41%;
-  --pc: 0 0% 100%;
-  --s: 205 67% 50%;
-  --sc: 0 0% 100%;
-  --a: 162 50% 41%;
-  --ac: 0 0% 100%;
+  --color-primary: oklch(63.146% 0.1053 171.009);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(63.164% 0.138 243.353);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(63.146% 0.1053 171.009);
+  --color-accent-content: oklch(100% 0 0);
 }
 
 [data-theme="emerald"] {
-  --p: 162 50% 41%;
-  --pc: 0 0% 100%;
-  --s: 205 67% 50%;
-  --sc: 0 0% 100%;
+  --color-primary: oklch(63.146% 0.1053 171.009);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(63.164% 0.138 243.353);
+  --color-secondary-content: oklch(100% 0 0);
 }

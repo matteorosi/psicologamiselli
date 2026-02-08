@@ -1,89 +1,137 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
   title="Schema Therapy - Dott.ssa Emanuela Miselli"
-  description="La Schema Therapy è un approccio integrativo particolarmente efficace per i disturbi di personalità e le problematiche croniche."
+  description="La Schema Therapy: un approccio profondo e strutturato per trasformare schemi radicati e costruire relazioni più sane."
 >
   <main class="container mx-auto px-4 py-12 max-w-4xl">
+    <div class="mb-8">
+      <a href={base} class="btn btn-ghost btn-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+        Torna alla Home
+      </a>
+    </div>
+
     <article class="prose prose-lg max-w-none">
-      <h1 class="text-4xl font-bold text-primary mb-8">Schema Therapy</h1>
-
+      <h1 class="text-4xl font-bold text-primary mb-4">Schema Therapy</h1>
       <p class="lead text-xl text-base-content/80 mb-8">
-        La Schema Therapy è un approccio psicoterapeutico integrativo sviluppato da
-        Jeffrey Young, particolarmente efficace per il trattamento dei disturbi di
-        personalità e delle problematiche psicologiche croniche.
+        Un approccio profondo e strutturato per trasformare schemi radicati.
       </p>
 
-      <h2>Cosa sono gli Schemi Maladattivi Precoci?</h2>
       <p>
-        Gli <strong>schemi maladattivi precoci</strong> sono pattern emotivi e cognitivi
-        profondi che si formano durante l'infanzia e l'adolescenza, quando i nostri
-        bisogni emotivi fondamentali non vengono adeguatamente soddisfatti.
+        La Schema Therapy è un modello psicoterapeutico sviluppato da Jeffrey Young che integra la solidità della terapia cognitivo comportamentale con la profondità degli approcci focalizzati sulle emozioni, sulla teoria dell'attaccamento e sulle relazioni precoci.
       </p>
       <p>
-        Questi schemi influenzano il modo in cui percepiamo noi stessi, gli altri e
-        il mondo, portandoci spesso a ripetere pattern relazionali disfunzionali.
+        È un percorso pensato per chi vive difficoltà che si ripetono nel tempo e desidera comprendere e trasformare i propri schemi più profondi.
       </p>
 
-      <h2>I bisogni emotivi fondamentali</h2>
+      <h2>Quando è utile la Schema Therapy</h2>
+      <p>La Schema Therapy si rivolge in particolare a chi sperimenta:</p>
       <ul>
-        <li><strong>Sicurezza e stabilità</strong>: sentirsi al sicuro e protetti</li>
-        <li><strong>Connessione e accettazione</strong>: sentirsi amati e accettati</li>
-        <li><strong>Autonomia e competenza</strong>: sentirsi capaci e indipendenti</li>
-        <li><strong>Libertà di espressione</strong>: poter esprimere bisogni e emozioni</li>
-        <li><strong>Limiti realistici</strong>: apprendere regole e autocontrollo</li>
+        <li>Ansia o depressione ricorrenti</li>
+        <li>Relazioni affettive instabili o ripetitive</li>
+        <li>Difficoltà nel riconoscere o esprimere i propri bisogni</li>
+        <li>Un forte senso di vergogna, inadeguatezza o solitudine</li>
+        <li>Disturbi dell'alimentazione o dipendenze</li>
+        <li>Disturbi di personalità, in particolare il Disturbo Borderline (con solide evidenze scientifiche)</li>
+        <li>Situazioni che non hanno trovato beneficio da altri percorsi terapeutici</li>
+      </ul>
+      <p>Rispetto alla CBT tradizionale, questo approccio:</p>
+      <ul>
+        <li>Dà più spazio alle emozioni</li>
+        <li>Valorizza il rapporto terapeutico come esperienza correttiva</li>
+        <li>Esplora i bisogni emotivi primari</li>
+        <li>Lavora su schemi profondi che influenzano scelte, relazioni e identità</li>
       </ul>
 
-      <h2>Per chi è indicata?</h2>
-      <p>La Schema Therapy è particolarmente efficace per:</p>
-      <ul>
-        <li><strong>Disturbi di personalità</strong> (borderline, narcisistico, evitante, dipendente)</li>
-        <li><strong>Depressione cronica</strong> o ricorrente</li>
-        <li><strong>Ansia cronica</strong></li>
-        <li><strong>Problemi relazionali</strong> ricorrenti</li>
-        <li><strong>Difficoltà</strong> a raggiungere obiettivi di vita</li>
-        <li>Quando altri approcci terapeutici non hanno funzionato</li>
-      </ul>
-
-      <h2>Come funziona?</h2>
-      <p>La Schema Therapy utilizza diverse tecniche:</p>
+      <h2>Gli Schemi Maladattivi Precoci</h2>
+      <p>
+        Gli schemi maladattivi precoci sono temi emotivi e cognitivi nati nell'infanzia, quando alcuni bisogni fondamentali non sono stati pienamente soddisfatti. Sono mappe interne che continuano a guidare il modo in cui interpretiamo il mondo.
+      </p>
+      <p>Young li raggruppa in cinque aree principali:</p>
 
       <div class="grid md:grid-cols-2 gap-4 not-prose my-8">
         <div class="card bg-base-200">
           <div class="card-body">
-            <h3 class="card-title text-primary">Tecniche cognitive</h3>
-            <p>Identificazione e modifica degli schemi e delle credenze disfunzionali</p>
+            <h3 class="card-title text-primary">1. Distacco e Rifiuto</h3>
+            <p>Difficoltà a sentirsi amati, sicuri, accettati. Abbandono, sfiducia/abuso, deprivazione emotiva, vergogna/inadeguatezza, esclusione sociale.</p>
           </div>
         </div>
         <div class="card bg-base-200">
           <div class="card-body">
-            <h3 class="card-title text-primary">Tecniche esperienziali</h3>
-            <p>Lavoro con le emozioni attraverso immaginazione guidata e dialogo con le sedie</p>
+            <h3 class="card-title text-primary">2. Mancanza di Autonomia</h3>
+            <p>Difficoltà a percepirsi competenti e indipendenti. Dipendenza, vulnerabilità, inviluppo, fallimento.</p>
           </div>
         </div>
         <div class="card bg-base-200">
           <div class="card-body">
-            <h3 class="card-title text-primary">Tecniche comportamentali</h3>
-            <p>Rottura dei pattern comportamentali disfunzionali</p>
+            <h3 class="card-title text-primary">3. Mancanza di Regole</h3>
+            <p>Problemi con autocontrollo, reciprocità e confini. Pretese/grandiosità, autocontrollo insufficiente.</p>
           </div>
         </div>
         <div class="card bg-base-200">
           <div class="card-body">
-            <h3 class="card-title text-primary">Relazione terapeutica</h3>
-            <p>Il terapeuta come "genitore buono" che soddisfa i bisogni emotivi</p>
+            <h3 class="card-title text-primary">4. Attenzione ai bisogni altrui</h3>
+            <p>Tendenza a compiacere, evitare conflitti o sacrificarsi. Sottomissione, autosacrificio, ricerca di approvazione.</p>
+          </div>
+        </div>
+        <div class="card bg-base-200 md:col-span-2">
+          <div class="card-body">
+            <h3 class="card-title text-primary">5. Ipercontrollo e Inibizione</h3>
+            <p>Rigidità emotiva, perfezionismo, autocritica severa. Negatività, inibizione emotiva, standard severi, punizione.</p>
           </div>
         </div>
       </div>
 
       <h2>I Mode</h2>
       <p>
-        Un concetto centrale della Schema Therapy sono i <strong>"mode"</strong>,
-        ovvero gli stati emotivi in cui entriamo in determinate situazioni.
-        Imparare a riconoscere e gestire i propri mode è fondamentale per il
-        cambiamento terapeutico.
+        Quando uno schema si attiva, entriamo in un <strong>mode</strong>, uno stato emotivo e comportamentale momentaneo.
+        Young ne identifica quattro categorie:
       </p>
+
+      <div class="grid md:grid-cols-2 gap-4 not-prose my-8">
+        <div class="card bg-base-200">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Mode del Bambino</h3>
+            <p>Bambino vulnerabile, arrabbiato, impulsivo, felice.</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Mode di Coping disfunzionale</h3>
+            <p>Resa, evitamento, ipercompensazione.</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Genitori interiorizzati</h3>
+            <p>Genitore punitivo, critico, richiedente.</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Adulto Sano</h3>
+            <p>La parte che può proteggere, regolare, scegliere e costruire relazioni più sicure.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>L'obiettivo della terapia: rafforzare l'Adulto Sano</h2>
+      <p>Il percorso terapeutico aiuta a:</p>
+      <ul>
+        <li>Riconoscere gli schemi e come si attivano</li>
+        <li>Comprendere i bisogni profondi non soddisfatti</li>
+        <li>Dare voce al Bambino vulnerabile con sicurezza e compassione</li>
+        <li>Ridurre il potere dei mode disfunzionali</li>
+        <li>Costruire nuove modalità di relazione più sane e stabili</li>
+        <li>Sviluppare un senso di sé più solido, libero e autentico</li>
+      </ul>
+      <p>È un lavoro che unisce profondità emotiva, strumenti concreti e un'alleanza terapeutica forte e sicura.</p>
 
       <div class="bg-primary/10 p-6 rounded-lg my-8">
         <h3 class="text-primary font-semibold mb-2">Vuoi saperne di più?</h3>
