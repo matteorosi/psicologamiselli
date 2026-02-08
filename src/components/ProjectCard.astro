@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import SkillBadge from "./SkillBadge.astro";
-import { ExternalLink, Eye } from "@lucide/astro";
+import { ExternalLink } from "@lucide/astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -85,11 +85,6 @@ function formatPeriod(startDate: Date, endDate?: Date) {
           </a>
         )
       }
-      <div class="tooltip" data-tip="View project details">
-        <a href={`${base}projects/${project.id}`} class="btn btn-sm btn-primary">
-          <Eye class="size-4" />
-        </a>
-      </div>
     </div>
   </div>
 </article>
