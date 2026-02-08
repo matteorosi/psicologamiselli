@@ -1,9 +1,9 @@
 enableThemeSelector: true
 extraLinksEnabled: true
 extraLinks:
-  - link: /servizi
+  - link: /projects
     icon: Heart
-    label: Servizi
+    label: Disturbi Trattati
     displayOn: both
   - link: /terapia-cognitivo-comportamentale
     icon: Brain
@@ -13,13 +13,9 @@ extraLinks:
     icon: Puzzle
     label: Schema Therapy
     displayOn: both
-  - link: /blog
-    icon: BookOpen
-    label: Blog
-    displayOn: both
 showAboutSection: true
 showProjectsSection: true
-showBlogSection: true
+showBlogSection: false
 showWorkSection: false
 showEducationSection: true
 showHackathonsSection: false
