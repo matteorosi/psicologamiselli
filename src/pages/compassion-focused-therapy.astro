@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import cftImage from "../assets/cft.jpg";
 const base = import.meta.env.BASE_URL;
 const normalizedBase = base.endsWith("/") ? base : `${base}/`;
 ---
@@ -17,6 +19,10 @@ const normalizedBase = base.endsWith("/") ? base : `${base}/`;
         Torna alla Home
       </a>
     </div>
+
+    <figure class="mb-8 rounded-2xl overflow-hidden bg-base-300">
+      <Image src={cftImage} alt="Compassion Focused Therapy" class="w-full max-h-96 object-contain p-4 mx-auto" width={800} height={600} />
+    </figure>
 
     <article class="prose prose-lg max-w-none">
       <h1 class="text-4xl font-bold text-primary mb-4">Compassion Focused Therapy (CFT)</h1>
