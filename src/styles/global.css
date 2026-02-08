@@ -3,25 +3,45 @@
 
 @plugin "daisyui" {
   themes:
-    light --default,
+    retro --default,
     dark --prefersdark,
+    light,
     emerald,
     corporate,
     forest;
 }
 
-/* Custom theme override for primary color - teal from original site */
-:root {
-  --primary: #359e81;
-  --primary-content: #ffffff;
+/* Custom theme override - colors from psicologamiselli.it */
+[data-theme="retro"] {
+  --p: 162 50% 41%; /* #359e81 teal */
+  --pc: 0 0% 100%;
+  --s: 205 67% 50%; /* #2991d6 blue */
+  --sc: 0 0% 100%;
+  --a: 162 50% 41%;
+  --ac: 0 0% 100%;
 }
 
 [data-theme="light"] {
-  --p: 162 50% 41%; /* #359e81 in HSL */
+  --p: 162 50% 41%;
   --pc: 0 0% 100%;
+  --s: 205 67% 50%;
+  --sc: 0 0% 100%;
+  --a: 162 50% 41%;
+  --ac: 0 0% 100%;
+}
+
+[data-theme="dark"] {
+  --p: 162 50% 41%;
+  --pc: 0 0% 100%;
+  --s: 205 67% 50%;
+  --sc: 0 0% 100%;
+  --a: 162 50% 41%;
+  --ac: 0 0% 100%;
 }
 
 [data-theme="emerald"] {
   --p: 162 50% 41%;
   --pc: 0 0% 100%;
+  --s: 205 67% 50%;
+  --sc: 0 0% 100%;
 }

@@ -43,11 +43,9 @@ const themes = [
     const savedTheme = localStorage.getItem("theme");
     let theme = savedTheme;
 
-    // If no saved theme, use system preference
+    // If no saved theme, default to retro
     if (!theme) {
-      theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
+      theme = "retro";
     }
 
     // Apply theme to document

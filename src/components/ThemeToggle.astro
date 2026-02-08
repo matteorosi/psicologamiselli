@@ -29,16 +29,12 @@
 </label>
 
 <script is:inline>
-  const lightThemeName = "light";
+  const lightThemeName = "retro";
   const darkThemeName = "dark";
 
-  // Set theme on page load based on localStorage or system preference
+  // Set theme on page load based on localStorage or default to retro
   function setTheme() {
-    const theme =
-      localStorage.getItem("theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? darkThemeName
-        : lightThemeName);
+    const theme = localStorage.getItem("theme") || lightThemeName;
     document.documentElement.setAttribute("data-theme", theme);
     const toggle = document.querySelector(".theme-controller");
     if (toggle) {
