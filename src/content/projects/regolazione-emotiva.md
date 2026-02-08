@@ -2,7 +2,7 @@
 featured: true
 title: Regolazione Emotiva
 description: Quando le emozioni arrivano troppo forti, troppo veloci o troppo a lungo
-image: '@assets/projects/regolazione-emotiva/image.svg'
+image: '@assets/projects/regolazione-emotiva/image.jpg'
 startDate: 2024-01-01
 skills:
   - Emozioni intense

@@ -2,7 +2,7 @@
 featured: true
 title: Disturbi di Personalità
 description: Quando modi profondi di sentire, pensare e relazionarsi diventano fonte di sofferenza
-image: '@assets/projects/disturbi-personalita/image.svg'
+image: '@assets/projects/disturbi-personalita/image.jpg'
 startDate: 2024-01-04
 skills:
   - Cluster A

@@ -2,7 +2,7 @@
 featured: true
 title: Disturbi d'Ansia
 description: Quando il sistema nervoso vive come se ci fosse sempre qualcosa da temere
-image: '@assets/projects/disturbi-ansia/image.svg'
+image: '@assets/projects/disturbi-ansia/image.jpg'
 startDate: 2024-01-06
 skills:
   - Ansia generalizzata

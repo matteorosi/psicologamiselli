@@ -2,7 +2,7 @@
 featured: true
 title: Disturbi da Relazione
 description: Quando stare in relazione diventa faticoso, confuso o doloroso
-image: '@assets/projects/problemi-coppia/image.svg'
+image: '@assets/projects/problemi-coppia/image.jpg'
 startDate: 2024-01-03
 skills:
   - Dipendenza affettiva
