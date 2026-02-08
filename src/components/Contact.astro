@@ -10,28 +10,47 @@ const SectionIcon = getIcon(contact.icon as any);
 const FooterIcon = getIcon(contact.footerIcon as any);
 ---
 
-<footer id="contact" class="footer footer-horizontal footer-center bg-base-200 py-10">
-  <aside>
-    <SectionIcon class="inline-block size-20" />
-    <p class="max-w-xl m-auto text-lg">
-      <Content />
-      <a
-        href={contact.linkUrl}
-        class="link link-hover text-primary"
-      >
-        {contact.linkText}
-      </a>
-    </p>
-    <p class="flex items-center space-x-1 text-base-content/60">
-      <span>Copyright © {new Date().getFullYear()} - {contact.footerText}</span>
-      <a
-        class="link link-hover inline-flex justify-center items-center"
-        href={contact.footerLinkUrl}
-        target="_blank"
-      >
-        <FooterIcon class="size-3 inline-block mr-1" />
-        {contact.footerLinkText}
-      </a>
-    </p>
-  </aside>
+<footer id="contact" class="bg-base-200 py-10">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-8">
+      <SectionIcon class="inline-block size-16 text-primary mb-4" />
+      <h2 class="text-3xl font-bold mb-4">Contatti</h2>
+      <div class="max-w-xl mx-auto text-lg">
+        <Content />
+        <a
+          href={contact.linkUrl}
+          class="link link-hover text-primary"
+        >
+          {contact.linkText}
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full rounded-xl overflow-hidden shadow-lg mb-8">
+      <iframe
+        src="https://www.google.com/maps?q=Via+Brigata+Reggio+32,+42124+Reggio+Emilia+RE,+Italy&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Centro Informa-Mente - Via Brigata Reggio 32, Reggio Emilia"
+      ></iframe>
+    </div>
+
+    <div class="text-center">
+      <p class="flex items-center justify-center space-x-1 text-base-content/60">
+        <span>Copyright © {new Date().getFullYear()} - {contact.footerText}</span>
+        <a
+          class="link link-hover inline-flex justify-center items-center"
+          href={contact.footerLinkUrl}
+          target="_blank"
+        >
+          <FooterIcon class="size-3 inline-block mr-1" />
+          {contact.footerLinkText}
+        </a>
+      </p>
+    </div>
+  </div>
 </footer>

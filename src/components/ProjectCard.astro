@@ -9,6 +9,7 @@ interface Props {
 }
 
 const base = import.meta.env.BASE_URL;
+const normalizedBase = base.endsWith("/") ? base : `${base}/`;
 const { project } = Astro.props;
 
 function formatPeriod(startDate: Date, endDate?: Date) {
@@ -27,7 +28,7 @@ function formatPeriod(startDate: Date, endDate?: Date) {
 <article class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
   <a
     class="hover:opacity-80 transition-opacity"
-    href={`${base}projects/${project.id}`}
+    href={`${normalizedBase}projects/${project.id}`}
   >
     <figure class="aspect-video">
       <Image
@@ -41,7 +42,7 @@ function formatPeriod(startDate: Date, endDate?: Date) {
   </a>
   <div class="card-body">
     <h3 class="card-title hover:text-primary transition-colors">
-      <a href={`${base}projects/${project.id}`}>{project.data.title}</a>
+      <a href={`${normalizedBase}projects/${project.id}`}>{project.data.title}</a>
     </h3>
     <time class="text-sm text-base-content/60">
       {formatPeriod(project.data.startDate, project.data.endDate)}
